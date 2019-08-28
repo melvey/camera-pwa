@@ -1,4 +1,17 @@
 @import './normalize';
 
+$background-color: #000;
+$text-color: #fff;
+
+html,
+body {
+	background: $background-color;
+	color: $text-color;
+}
+
+header {
+	text-align: center;
+}
+
 @import './camera.scss';
 @import './gallery.scss';

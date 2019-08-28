@@ -209,6 +209,15 @@ sup {
   display: none;
 }
 
+html,body {
+  background: #000;
+  color: #fff;
+}
+
+header {
+  text-align: center;
+}
+
 .camera {
   position: relative;
   width: 100vw;
