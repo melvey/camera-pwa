@@ -20,7 +20,7 @@ gulp.task('js', () => {
 gulp.task('sass', () => {
 	return gulp.src('src/styles/style.scss')
 		.pipe(plugins.sass())
-		.pipe(plugins.combineMq())
+//		.pipe(plugins.combineMq())
 //		.pipe(plugins.csso())
 		.pipe(plugins.autoprefixer())
 		.pipe(gulp.dest('./build/'));
