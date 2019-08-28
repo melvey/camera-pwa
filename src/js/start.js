@@ -1,5 +1,12 @@
 import 'whatwg-fetch';
 import camera from './camera';
+import Gallery from './gallery';
 
-camera();
+const gallery = new Gallery();
+
+function photoCallback(photo) {
+	gallery.addPhoto(photo);
+}
+
+camera({callback: photoCallback});
 

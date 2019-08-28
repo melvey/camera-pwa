@@ -29,7 +29,7 @@ $button-size: 100px;
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	bottom: 50px;
+	bottom: 10vh;
 	left: calc(50% - #{$button-size / 2});
 	position: absolute;
 	width: $button-size;

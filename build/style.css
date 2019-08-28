@@ -219,6 +219,8 @@ sup {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  margin: auto;
   max-width: 100%;
   max-height: 100%;
 }
@@ -233,7 +235,7 @@ sup {
   -ms-flex-direction: column;
       flex-direction: column;
   position: absolute;
-  bottom: 50px;
+  bottom: 10vh;
   left: calc(50% - 50px);
   position: absolute;
   width: 100px;
@@ -296,4 +298,25 @@ sup {
 .camera__preview .camera__save,.camera__preview .camera__reject {
   display: -ms-flexbox;
   display: flex;
+}
+
+.gallery {
+  position: absolute;
+  height: 10vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  bottom: 0;
+  width: 100%;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  overflow-x: scroll;
+}
+
+.gallery img {
+  padding: 5px;
+  max-height: 100%;
 }

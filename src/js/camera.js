@@ -8,11 +8,13 @@ let video = null;
 let canvas = null;
 let startbutton = null;
 
-let photos = [];
+let photoCallback = null;
 
 function setup(config = {}) {
 
 	width = config.width || screen.width;
+
+	photoCallback = config.callback;
 
 	video = document.getElementById('camera-view');
 	canvas = document.getElementById('canvas');
@@ -79,7 +81,10 @@ function takePicture() {
 function savePhoto() {
 	const data = canvas.toDataURL('image/png');
 
-	photos.push(data);
+	if(photoCallback) {
+		photoCallback(data);
+	}
+
 	canvas.parentNode.classList.remove('camera__preview');
 }
 

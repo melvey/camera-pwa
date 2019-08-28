@@ -1,0 +1,17 @@
+
+.gallery {
+	position: absolute;
+	height: 10vh;
+	display: flex;
+	justify-content: space-between;
+	bottom: 0;
+	width: 100%;
+	flex-direction: row;
+	align-items: flex-end;
+	overflow-x: scroll;
+
+	img {
+		padding: 5px;
+		max-height: 100%;
+	}
+}
