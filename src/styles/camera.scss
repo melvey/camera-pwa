@@ -79,6 +79,13 @@ $button-size: 100px;
 }
 
 .camera__preview {
+
+	.camera__viewfinder,
+	.camera__canvas {
+		animation-name: shutter;
+		animation-duration: 100ms;
+	}
+
 	.camera__viewfinder {
 		opacity: 0;
 	}
@@ -98,4 +105,18 @@ $button-size: 100px;
 	}
 }
 
+@keyframes shutter {
+	0% {
+		filter: brightness(100%) grayscale(0) blur(0)
+	}
+	40% {
+		filter: brightness(1000%) grayscale(100%) blur(100px)
+	}
+	60% {
+		filter: brightness(1000%) grayscale(100%) blur(100px)
+	}
+	100% {
+		filter: brightness(100%) grayscale(0) blur(0)
+	}
+}
 
